@@ -24,31 +24,38 @@
 
 :root{
   --theme: wheat;
-  --secondary : #f9c05b ;
+  --bg : #333646;
   --secondary : skyblue ;
-  /* --theme : #f9c05b; */
-  /* --theme : rgb(247, 146, 135); */
+  --bg-secondary : #1b1b1b;
+}
+
+
+body{
+  background: var(--bg);
+
 }
 
 .page {
   position: relative;
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
 }
 
 h1{
   font-family: 'DessauProDrei';
 }
 
-div::-webkit-scrollbar,
+body::-webkit-scrollbar ,div::-webkit-scrollbar,
 section::-webkit-scrollbar {
   /* height: 10px; */
   background: darkgray;
   cursor: pointer;
   border-radius: 100px;
-  /* width: 10px; */
+  width: 10px;
 }
 
 section::-webkit-scrollbar-thumb {

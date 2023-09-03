@@ -34,7 +34,7 @@
         <section class="left">
           <h3>Dev & Pixels <span></span></h3>
           <div class="socialBox">
-            <a class="fa-brands fa-linkedin"></a>
+            <a class="fa-brands fa-facebook"></a>
             <a class="fa-brands fa-instagram"></a>
             <a class="fa-brands fa-x-twitter"></a>
           </div>
@@ -112,7 +112,7 @@
         </section>
         <section class="right">
           <div class="introText">
-            Contact me and lets start building your robust fullstack web & mobile apps today.
+            Contact me and let's start building your robust full stack web & mobile apps today.
             I offer an aesthetic frontend interface, where we could go minimalist or all out depending on
             your preference, i then add a secure and reliable backend system that suits your apps
             requirements, mostly django | rest | graphQL.
@@ -202,17 +202,120 @@
           </section>
         </section>
       </section>
+
+      <a href="#profileBox" class="profileLink">
+        <!-- <i class="material-symbols-outlined">person_pin_circle</i> -->
+        <i class="material-symbols-outlined" style="rotate: 90deg;">chevron_right</i>
+      </a>
+
+
+      <style>
+        .profileLink{
+          display: flex;
+          flex-direction: column;
+          font-size: 5rem;
+          background: var(--theme);
+          background: var(--secondary);
+          /* border: 2px solid wheat; */
+          border-radius: 50px;
+          justify-content: center;
+        }
+        .profileLink i{
+          font-size: 2rem;
+          /* font-weight: 600; */
+          color: var(--theme);
+          color: white;
+        }
+      </style>
+
     </section>
+
+    <section class="profileBox" id="profileBox">
+      <section class="profile">
+        <header>
+          <h1>Emmanuel<i class="material-symbols-outlined">atr</i></h1>
+          <p>Mobile & Web Developer + Web Designer <span></span></p>
+        </header>
+        <img src="images/programmer.jpg" alt="">
+        <a href=""><i class="material-symbols-outlined">send</i> <span>Let's Work</span></a>
+      </section>
+      <section class="right"></section>
+    </section>
+
+    <style>
+      .profileBox{
+        min-height: 84vh;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8vh 10%;
+        background: var(--bg-secondary);
+      }
+      .introBox,.profileBox{
+        scroll-snap-align: start;
+      }
+      .profile{
+        width: 360px;
+        padding: 20px;
+        /* height: calc(90% - 40px); */
+        border-radius: 30px;
+        border: 2px solid var(--secondary);
+        /* border: 2px solid var(--theme); */
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem 0;
+      }
+      .profile header h1{
+        font-size: 2rem;
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        color: var(--theme);
+      }
+      .profile header p{
+        color: white;
+      }
+      .profile header p span{
+        display: block;
+        height: 3px;
+        width: 50px;
+        background: var(--theme);
+      }
+      .profile img{
+        width: 100%;
+        border-radius: 20px;
+        height: 250px;
+        object-fit: cover;
+      }
+      .profile a{
+        width: calc(100% - 20px);
+        border-radius: 100px;
+        padding: 10px;
+        background: var(--theme);
+        background: var(--secondary);
+        color: var(--bg-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+      }
+      .profile a h1{
+        font-weight: 400;
+      }
+    </style>
 
   </section>
 
   <style>
     .introBox {
-      background: #333646;
+      /* border: 1px solid wheat; */
       width: 80%;
       display: flex;
       gap: 2rem 0;
       flex-direction: column;
+      align-items: center;
+      min-height: 84vh;
       padding: 8vh 10%;
     }
 
@@ -395,14 +498,12 @@
 
   <script>
     document.querySelectorAll('hr').forEach((el,i)=>{
-      console.log(el.clientWidth)
       anime({
         targets : el,
         width : [0, `${el.clientWidth}px`],
         duration : 1000,
         easing : 'linear'
       })
-
     })
   </script>
 
@@ -410,7 +511,7 @@
 <script>
   anime({
     loop: true,
-    targets: '.logoBox i',
+    targets: ['.logoBox i', '.profile header h1 i'] ,
     rotate: '1turn',
     easing: 'linear',
     duration: 2000
