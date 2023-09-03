@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/eb75260fb3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+  <section class="page">
+    <section class="introBox">
+      <nav>
+        <div class="logoBox">
+          <h1>dp</h1><i class="material-symbols-outlined">atr</i>
+        </div>
+        <section>
+          <a href="">Services <span></span></a>
+          <a href="">Demos <span></span></a>
+          <a href="">Contact <span></span></a>
+        </section>
+      </nav>
+      <section class="intro">
+        <section class="left">
+          <h3>Dev & Pixels <span></span></h3>
+          <div class="socialBox">
+            <a class="fa-brands fa-linkedin"></a>
+            <a class="fa-brands fa-instagram"></a>
+            <a class="fa-brands fa-x-twitter"></a>
+          </div>
+
+          <section class="showBox swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <img src="images/head-modified.png" alt="">
+                  <a href="" class="material-symbols-outlined">desktop_windows</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="images/head3-modified.png" alt="">
+                  <a href="" class="material-symbols-outlined">desktop_windows</a>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .introBox .intro .left .showBox {
+                width: 400px;
+              }
+
+              .introBox .intro .left .showBox img {
+                width: 100%;
+                height: 220px;
+                object-fit: contain;
+                aspect-ratio: 4/3;
+              }
+
+              .introBox .intro .left .showBox .swiper-slide div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+              }
+
+              .introBox .intro .left .showBox .swiper-slide div a {
+                height: 45px;
+                width: 45px;
+                background: rgba(0, 0, 0, 0.63);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: white;
+                position: absolute;
+                z-index: 100;
+              }
+            </style>
+
+          </section>
+
+
+          <script>
+            var showBoxSwiper = new Swiper('.showBox', {
+              loop: true,
+              speed: 1000,
+              autoplay: {
+                delay: 5000
+              }
+            })
+            console.log(showBoxSwiper.el)
+            showBoxSwiper.el.onmouseenter = () => {
+              showBoxSwiper.autoplay.stop()
+            }
+            showBoxSwiper.el.onmouseleave = () => {
+              showBoxSwiper.autoplay.start()
+            };
+
+          </script>
+
+        </section>
+        <section class="right">
+          <div class="introText">
+            Contact me and lets start building your robust fullstack web & mobile apps today.
+            I offer an aesthetic frontend interface, where we could go minimalist or all out depending on
+            your preference, i then add a secure and reliable backend system that suits your apps
+            requirements, mostly django | rest | graphQL.
+          </div>
+          <hr style="width: 70%">
+          <article>
+            <p>
+              <span>Web Development</span>
+              <small>Frontend</small>
+              <small>Backend</small>
+            </p>
+            <p>
+              <span>UI/UX</span>
+            </p>
+            <p>
+              <span>SEO</span>
+            </p>
+            <p>
+              <span>Special Lessons</span>
+            </p>
+          </article>
+
+          <script>
+            
+          </script>
+
+          <hr>
+          <section class="frameBox">
+            <!-- <button>...</button> -->
+            <div class="minFrame">
+              <i class='bx bxl-django'></i>
+            </div>
+            <div class="minFrame">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="minFrame">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="minFrame">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="minFrame">
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <div class="minFrame">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            
+
+            <style>
+              .frameBox {
+                display: flex;
+                align-items: center;
+                gap: 0 1rem;
+              }
+
+              .frameBox button {
+                width: 50px;
+                font-size: 3rem;
+                font-weight: 600;
+                cursor: pointer;
+                color: white;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+                /* border: 1px solid white; */
+                background: transparent;
+              }
+
+              .minFrame {
+                width: 55px;
+                height: 80px;
+                border-radius: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid var(--secondary);
+              }
+
+              .minFrame i {
+                font-size: 1.5rem;
+                color: var(--secondary);
+              }
+            </style>
+
+          </section>
+        </section>
+      </section>
+    </section>
+
+  </section>
+
+  <style>
+    .introBox {
+      background: #333646;
+      width: 80%;
+      display: flex;
+      gap: 2rem 0;
+      flex-direction: column;
+      padding: 8vh 10%;
+    }
+
+    .introBox nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .introBox nav section {
+      display: flex;
+      gap: 0 1.5rem;
+    }
+
+    .introBox nav section a {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.3rem;
+      color: white;
+    }
+
+    .introBox nav section a span {
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: wheat;
+      transition: 0.4s ease;
+    }
+
+    .introBox nav section a:hover span {
+      opacity: 1;
+      width: 100%;
+    }
+
+    .logoBox {
+      display: flex;
+      align-items: flex-start;
+      color: white;
+      color: var(--theme);
+    }
+
+    .logoBox i {
+      rotate: 90deg;
+    }
+
+    .introBox h1 {
+      display: flex;
+      align-items: center;
+      font-size: 3.2rem;
+    }
+
+    .introBox .intro {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .introBox .intro .left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .introBox .intro .left h3 {
+      display: flex;
+      flex-direction: column;
+      font-size: 4rem;
+      color: white;
+      font-weight: 400;
+    }
+
+    .introBox .intro .left h3 span {
+      width: 30%;
+      height: 5px;
+      background: var(--theme);
+    }
+
+    .introBox .intro .left .socialBox {
+      display: flex;
+      gap: 0 1rem;
+    }
+
+    .introBox .intro .left .socialBox a {
+      color: var(--theme);
+      font-size: 2rem;
+    }
+
+    .introBox .intro .left img {
+      width: 300px;
+    }
+
+    .introBox .intro .left hr {
+      width: 100px;
+      height: 5px;
+      background: var(--theme);
+    }
+
+    .introBox .intro .right {
+      max-width: 40%;
+      gap: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .introBox .intro .right .introText {
+      text-align: right;
+      color: white;
+    }
+
+    .introBox .intro .right article {
+      color: white;
+      text-align: right;
+    }
+
+    .introBox .intro .right article p {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .introBox .intro .right article p span {
+      font-size: 1.1rem;
+    }
+
+    .introBox .intro .right article p small {
+      color: rgb(247, 236, 216);
+    }
+
+    .introBox .intro .right hr {
+      width: 100px;
+      height: 5px;
+      background: var(--theme);
+    }
+
+    @media all and (max-width:1050px){
+      .introBox .intro{
+        flex-direction: column;
+        gap: 1rem 0;
+      }
+      .introBox .intro .left,.introBox .intro .right{
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+      .introBox .intro .right .introText{
+        text-align: center;
+      }
+      .introBox .intro .right article{
+        text-align: center;
+      }
+    }
+    @media all and (max-width:500px){
+      .introBox{
+        padding: 5vh 10%;
+      }
+      .introBox nav{
+        flex-direction: column;
+      }
+      .introBox nav section a{
+        font-size: 1rem;
+      }
+      .introBox .intro .left h3{
+        font-size: 10vw;
+      }
+      .introBox .intro .left .showBox{
+        width: 100%;
+      }
+      .frameBox{
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        gap: 1rem;
+      }
+    }
+  </style>
+
+
+  <script src="js/animations.js"></script>
+
+  <script>
+    document.querySelectorAll('hr').forEach((el,i)=>{
+      console.log(el.clientWidth)
+      anime({
+        targets : el,
+        width : [0, `${el.clientWidth}px`],
+        duration : 1000,
+        easing : 'linear'
+      })
+
+    })
+  </script>
+
+</body>
+<script>
+  anime({
+    loop: true,
+    targets: '.logoBox i',
+    rotate: '1turn',
+    easing: 'linear',
+    duration: 2000
+  })
+</script>
+
+</html>

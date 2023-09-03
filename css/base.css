@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'DessauProDrei';
+  src: url('DessauProDrei.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --theme: wheat;
+  --secondary : #f9c05b ;
+  --secondary : skyblue ;
+  /* --theme : #f9c05b; */
+  /* --theme : rgb(247, 146, 135); */
+}
+
+.page {
+  position: relative;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+h1{
+  font-family: 'DessauProDrei';
+}
+
+div::-webkit-scrollbar,
+section::-webkit-scrollbar {
+  /* height: 10px; */
+  background: darkgray;
+  cursor: pointer;
+  border-radius: 100px;
+  /* width: 10px; */
+}
+
+section::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 100px;
+}
