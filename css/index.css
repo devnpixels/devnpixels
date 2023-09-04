@@ -1,0 +1,599 @@
+.introBox {
+  display: flex;
+  gap: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introBox,
+.profileBox,
+.outroBox {
+  width: 80%;
+  padding: 8vh 10%;
+  scrollbar-width: thin;
+  min-height: 84vh;
+  overflow: auto;
+  scroll-snap-align: start;
+}
+
+.introBox::-webkit-scrollbar,
+.profileBox::-webkit-scrollbar,
+.outroBox::-webkit-scrollbar {
+  display: none;
+}
+
+.introBox nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introBox nav section {
+  display: flex;
+  gap: 0 1.5rem;
+}
+
+.introBox nav section a {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.introBox nav section a span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: var(--theme);
+  transition: 0.4s ease;
+}
+
+.introBox nav section a:hover span {
+  opacity: 1;
+  width: 100%;
+}
+
+.logoBox {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  color: var(--theme);
+}
+
+.logoBox i {
+  rotate: 90deg;
+}
+
+.introBox h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3.2rem;
+}
+
+.introBox .intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introBox .intro .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.introBox .intro .left h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  color: white;
+  font-weight: 400;
+}
+
+.introBox .intro .left h3 span {
+  width: 30%;
+  height: 5px;
+  background: var(--theme);
+}
+
+.introBox .intro .left .socialBox {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.introBox .intro .left .socialBox a {
+  color: var(--theme);
+  font-size: 2rem;
+}
+
+.introBox .intro .left img {
+  width: 300px;
+}
+
+.introBox .intro .left hr {
+  width: 100px;
+  height: 5px;
+  background: var(--theme);
+}
+
+.introBox .intro .right {
+  max-width: 40%;
+  gap: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.introBox .intro .right .introText {
+  text-align: right;
+  color: white;
+}
+
+.introBox .intro .right article {
+  color: white;
+  text-align: right;
+}
+
+.introBox .intro .right article p {
+  display: flex;
+  flex-direction: column;
+}
+
+.introBox .intro .right article p span {
+  font-size: 1.1rem;
+}
+
+.introBox .intro .right article p small {
+  color: rgb(247, 236, 216);
+}
+
+.introBox .intro .right hr {
+  width: 100px;
+  height: 5px;
+  background: var(--theme);
+}
+
+.introBox .intro .left .showBox {
+  width: 400px;
+}
+
+.introBox .intro .left .showBox img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  aspect-ratio: 4/3;
+}
+
+.introBox .intro .left .showBox .swiper-slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.introBox .intro .left .showBox .swiper-slide div a {
+  height: 45px;
+  width: 45px;
+  background: rgba(0, 0, 0, 0.63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  z-index: 100;
+}
+
+.frameBox {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.frameBox button {
+  width: 50px;
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.minFrame {
+  width: 55px;
+  height: 80px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary);
+}
+
+.minFrame i {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.profileLink {
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  background: var(--theme);
+  background: var(--secondary);
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.profileLink i {
+  font-size: 2rem;
+  color: var(--theme);
+  color: white;
+}
+
+.profileBox {
+  min-height: 84vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8vh 10%;
+  overflow: auto;
+  background: var(--bg-secondary);
+  scrollbar-width: thin;
+}
+
+.profile {
+  width: 360px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem 0;
+}
+
+.profile header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  color: var(--theme);
+}
+
+.profile header p {
+  color: white;
+}
+
+.profile header p span {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: var(--theme);
+}
+
+.profile .links {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.profile .links a {
+  font-size: 2rem;
+  color: var(--theme);
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.profile .mailTag {
+  width: calc(100% - 20px);
+  border-radius: 100px;
+  padding: 10px;
+  background: var(--theme);
+  background: var(--secondary);
+  color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.profile a h1 {
+  font-weight: 400;
+}
+
+.profileBox .right {
+  width: 400px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem 0;
+  align-items: flex-end;
+}
+
+.profileBox .right h3 {
+  font-size: 2rem;
+  color: white;
+}
+
+.projectBoxHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+}
+
+.projectBox {
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.projectBox small {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: var(--theme);
+  left: 15px;
+  top: 15px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+.projectBox:hover small {
+  scale: 70;
+}
+
+.skillBox {
+  border-radius: 5px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectBox section {
+  display: flex;
+  border-bottom: 1px solid var(--theme);
+  z-index: 10;
+}
+
+.projectBox span {
+  font-size: 2rem;
+  color: var(--theme);
+  z-index: 10;
+}
+
+.skillBox,
+.projectBox span {
+  transition: 0.4s ease;
+}
+
+.projectBox:hover span,
+.projectBox:hover .skillBox {
+  color: var(--bg-secondary);
+}
+
+.projectBox:hover section {
+  border-bottom: 1px solid var(--bg-secondary);
+}
+
+.catalogSwiper {
+  width: 300px;
+  height: 300px;
+}
+
+.catalogSwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 4/3;
+}
+
+.outroBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.outroBox .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem 0;
+}
+
+.outroBox .left header {
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.outroBox .left header h3 {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.outroBox .left header h3 span {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background: var(--theme);
+}
+
+.outroBox .strawBox {
+  display: flex;
+  gap: 0 2rem;
+  align-items: flex-start;
+}
+
+.outroBox .straw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem 0;
+}
+
+.outroBox .straw a {
+  font-size: 1.5rem;
+  color: var(--theme);
+}
+
+@media all and (max-width:1050px) {
+  .introBox .intro {
+    flex-direction: column;
+    gap: 1rem 0;
+  }
+
+  .introBox .intro .left,
+  .introBox .intro .right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .showBox {
+    width: 30%;
+  }
+
+  .introBox .intro .right .introText {
+    width: 100%;
+    text-align: center;
+  }
+
+  .introBox .intro .right article {
+    text-align: center;
+  }
+
+  .profileBox {
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+
+  .profileBox .profile {
+    width: calc(100% - 40px);
+    align-items: center;
+  }
+
+  .profileBox .profile header,
+  .profileBox .profile header p {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileBox .right {
+    width: 100%;
+    align-items: center;
+    overflow-y: revert;
+  }
+
+  .profileBox .right .projectBoxHolder {
+    width: 100%;
+  }
+
+  .profileBox .right .projectBox {
+    width: calc(100% - 30px);
+  }
+
+  .projectBox:hover small {
+    scale: 200;
+  }
+
+  .outroBox {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+
+  .outroBox .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .outroBox .left header {
+    text-align: center;
+  }
+
+  .outroBox .left header h3 {
+    align-items: center;
+  }
+}
+
+@media all and (max-width:500px) {
+  .introBox {
+    padding: 5vh 10%;
+  }
+
+  .introBox nav {
+    flex-direction: column;
+  }
+
+  .introBox nav section a {
+    font-size: 1rem;
+  }
+
+  .introBox .intro .left h3,
+  .profileBox .right h3 {
+    font-size: 10vw;
+  }
+
+  .introBox .intro .left .showBox,
+  .catalogSwiper {
+    width: 300px;
+  }
+
+  .catalogSwiper {
+    height: 300px;
+  }
+
+  .frameBox {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .introBox,
+  .outroBox,
+  .profileBox {
+    scroll-snap-align: revert;
+  }
+}
+
+@media all and (max-width:300px) {
+  .introBox .intro .left .showBox {
+    width: 250px;
+  }
+
+  .catalogSwiper {
+    width: 250px;
+    height: 250px;
+  }
+}

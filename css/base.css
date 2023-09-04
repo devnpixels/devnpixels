@@ -32,7 +32,6 @@
 
 body{
   background: var(--bg);
-
 }
 
 .page {
@@ -51,7 +50,6 @@ h1{
 
 body::-webkit-scrollbar ,div::-webkit-scrollbar,
 section::-webkit-scrollbar {
-  /* height: 10px; */
   background: darkgray;
   cursor: pointer;
   border-radius: 100px;
@@ -61,4 +59,12 @@ section::-webkit-scrollbar {
 section::-webkit-scrollbar-thumb {
   background: white;
   border-radius: 100px;
+}
+
+
+@media all and (max-width:500px){
+  .page {
+    scroll-snap-type: revert;
+    height: revert;
+  }
 }
